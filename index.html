@@ -35,12 +35,6 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-
-	<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
-	<script>
-		var cityCode=returnCitySN.cid;
-   		 document.write('<hr><br><h1> 老铁位置：'+JSON.stringify(returnCitySN)+'</h1>');
-	</script>
 </head>
 
 <body>
@@ -970,6 +964,13 @@
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
+
+	<script>
+		$.get("http://120.79.196.65:3000/api/index/list", function (data){
+				alert(1111)
+				console.log(data)
+		})
+	</script>
 </body>
 
 </html>
